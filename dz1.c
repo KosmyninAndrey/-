@@ -1,21 +1,21 @@
-#include<stdio.h>
+ï»¿#include<stdio.h>
 void main()
 {
 	const int n = 6;
 	int matr[6][6], k = 1;
 	for (int i = 0; i < n; i++)
 		for (int j = 0; j < n; j++) 
-			matr[i][j] = k++;                 //Ñîçäàíèå ìàòðèöû
+			matr[i][j] = k++;                 //Ð¡Ð¾Ð·Ð´Ð°Ð½Ð¸Ðµ Ð¼Ð°Ñ‚Ñ€Ð¸Ñ†Ñ‹
 	for (int j = 0; j < n; j += 2)
 		for (int i = 0; i < n; i++)
 		{
-			k = matr[i][j];                   //Ïåðåñòàíîâêà ñòîëáöîâ
+			k = matr[i][j];                   //ÐŸÐµÑ€ÐµÑÑ‚Ð°Ð½Ð¾Ð²ÐºÐ° ÑÑ‚Ð¾Ð»Ð±Ñ†Ð¾Ð²
 			matr[i][j] = matr[i][j+1];
 			matr[i][j+1] = k;
 		}
 	for (int i = 0; i < n; i++)
 	{
-		for (int j = 0; j < n; j++)               //Âûâîä ìàòðèöû
+		for (int j = 0; j < n; j++)               //Ð’Ñ‹Ð²Ð¾Ð´ Ð¼Ð°Ñ‚Ñ€Ð¸Ñ†Ñ‹
 			printf("%4d", matr[i][j]);
 		printf("\n");
 	}
