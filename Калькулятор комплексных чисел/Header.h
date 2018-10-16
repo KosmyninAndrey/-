@@ -9,5 +9,6 @@ struct complex
         int a, b;
 };
 int menu();
-void scan_numbers(struct complex *x,struct complex *y, int c);
+void scan_numbers(struct complex *x, struct complex *y, int c);
+void calculation(struct complex *x, struct  complex *y, int *i);
 #endif 

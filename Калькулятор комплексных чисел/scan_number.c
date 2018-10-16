@@ -5,9 +5,9 @@ void scan_numbers(struct complex *x,struct complex *y, int c)
         if (c != 0)
         {
                 printf("Èñïîëüçîâàòü ïîëó÷åííîå çíà÷åíèå?\n1.Äà\n2.Íåò\n");
-                scanf("\n%c", &i);
+                scanf("%d", &i);
         }
-        if (i == 0)
+        if (i != 1)
         {
                 printf("Ââåäèòå âåùåñòâåííóþ ÷àñòü ïåðâîãî ÷èñëà\n");
                 scanf("%d", &x->a);
