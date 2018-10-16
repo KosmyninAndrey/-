@@ -24,7 +24,7 @@ void calculation(struct complex *x, struct complex *y, int *i)
                 }
                 else
                 {                           //Деление
-                        int del = (y->a*y->a - y->b*y->b);
+                        int del = (y->a*y->a + y->b*y->b);
                         if (del != 0)
                         {
                                 x->a = (d.a*y->a + d.b*y->b) / del;
